@@ -1,0 +1,5 @@
+DROP DATABASE IF EXISTS blog_14_db;
+
+CREATE DATABASE blog_14_db;
+
+USE blog_14_db;
