@@ -1,0 +1,12 @@
+<div>
+  <h1>Recent Posts</h1>
+  {{#each posts}}
+  <div class="card">
+    <h2 class="card-title">
+      <a href='/post/{{id}}'>{{title}}</a>
+    </h2>
+    <p class="card-body">{{body}}</p>
+    <p>Posted by User {{userId}} on {{createdAt}}</p>
+  </div>
+  {{/each}}
+</div>
