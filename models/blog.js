@@ -3,12 +3,16 @@ const sequelize = require('../config/config');
 
 class Blog extends Model {}
 
-Post.init(
+Blog.init(
   {
     title: DataTypes.STRING,
-    body: DataTypes.STRING,
-    validate: {
-      len: [200] 
+    body: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notEmpty: true,
+        len: [200]
+      }
     }
   },
   {

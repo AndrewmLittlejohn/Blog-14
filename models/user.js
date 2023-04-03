@@ -26,14 +26,6 @@ User.init(
       validate: {
         len: [8,256]
       }
-    },
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        isEmail: true
-      }
-
     }
   },
   {
